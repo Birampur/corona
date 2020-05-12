@@ -107,6 +107,16 @@ function addPolygons(data) {
       });
     }
   }
+
+    document.getElementById("mst_conf_today").innerText = map_lang === "bn" ? bn_num(today_conf) : today_conf;
+    document.getElementById("mst_rcov_today").innerText = map_lang === "bn" ? bn_num(today_rcov) : today_rcov;
+    document.getElementById("mst_dead_today").innerText = map_lang === "bn" ? bn_num(today_dead) : today_dead;
+
+    document.getElementById("mst_conf_total").innerText = map_lang === "bn" ? bn_num(total_conf) : total_conf;
+    document.getElementById("mst_rcov_total").innerText = map_lang === "bn" ? bn_num(total_recv) : total_recv;
+    document.getElementById("mst_dead_total").innerText = map_lang === "bn" ? bn_num(total_dead) : total_dead;
+
+
   // The polygons are styled slightly differently on mouse hovers
   var polygonStyle = { color: "#f78c72", fillColor: "#f78c72" , weight: 1.5, fillOpacity: 1};
   var polygonHoverStyle = { color: "#f5eb5d", fillColor: "#f7ea2f", weight: 1.5, fillOpacity: 1};

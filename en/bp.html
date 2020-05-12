@@ -40,6 +40,13 @@
             height: 100%;
             width: 100%;
         }
+        .map-stat-table{
+            position:absolute;
+            z-index:1;
+            left: 0;
+            bottom:0;
+            margin-bottom: 60px;
+        }
 
     </style>
 
@@ -63,16 +70,16 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-<!--             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav"> -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-  <!--                   <li class="hidden">
+          <!--           <li class="hidden">
                         <a href="index.html"></a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a class="page-scroll" href="index.html">Bangladesh</a>
+                        <a class="page-scroll" href="https://covid19.boiledbhoot.com/" target="_blank">Bangladesh</a>
                     </li>
-                    <li>
+                   <!--  <li>
                         <a class="page-scroll" href="http://103.247.238.81/webportal/pages/covid19.php" target="_blank">Dashboard</a>
                     </li>
                     <li>
@@ -83,13 +90,36 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="../pages/source.html">Sources</a>
-                    </li>
+                    </li> -->
                 </ul>
-            </div> -->
-<!--         </div> -->
+            </div>
+        </div>
     </nav>
 
-    <marquee scrollamount=3>National Call Center: 333 * Shasthya Batayan: 16263 * IEDCR: 10655 * Specialist helpline: 096116 77777 * National helpline: 109</marquee>
+        <table class="map-stat-table">
+        <tr>
+        <th id="mst_heading_status">Status</th>
+        <th id="mst_heading_today">24 hr </th>
+        <th id="mst_heading_total">Total</th>
+        </tr>
+        <tr class="mst-row-conf">
+        <td id="mst_label_conf">Confirmed</td>
+        <td id="mst_conf_today">0</td>
+        <td id="mst_conf_total">0</td>
+        </tr>
+        <tr class="mst-row-rcov">
+        <td id="mst_label_rcov">Recovered</td>
+        <td id="mst_rcov_today">0</td>
+        <td id="mst_rcov_total">0</td>
+        </tr>
+        <tr class="mst-row-dead">
+        <td id="mst_label_dead">Dead</td>
+        <td id="mst_dead_today">0</td>
+        <td id="mst_dead_total">0</td>
+        </tr>
+        </table>
+
+    <marquee scrollamount=3> Birampur Upazila Health Complex: 01730324634 * Birampur UPHE: 01763135010 * M. P. Shibli Sadeeq: 01712271429 * Birampur Upazila Mayor: 01712701276 * Birampur Municipal Mayor: 01755564964 * National Call Center: 333 * Shasthya Batayan: 16263 * IEDCR: 10655 * Specialist helpline: 096116 77777 * National helpline: 109</marquee>
 
     <div id="map"></div>
 
